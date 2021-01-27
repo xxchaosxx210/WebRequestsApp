@@ -1,0 +1,20 @@
+Container:
+    orientation: "vertical"
+    GridLayout:
+        size_hint: 1, .1
+        cols: 2
+        TextInput:
+            size_hint: .8, 1
+            text: ""
+            id: fetch_text_input
+            multiline: False
+        Button:
+            size_hint: .2, 1
+            text: "Fetch"
+            on_release: root.on_fetch_release()
+    TextInput:
+        size_hint: 1, .8
+        text: "Response HTML will go here..."
+        multiline: True
+        id: response_text_input
+        
